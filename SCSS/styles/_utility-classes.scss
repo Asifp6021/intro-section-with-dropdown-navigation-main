@@ -1,0 +1,67 @@
+@use './colors' as clr;
+@use './typographyes' as type;
+@use './mixin';
+
+
+
+.content-limit {
+	display: flex;
+	justify-content: center;
+
+	& > div:first-child {
+		max-width: 1450px;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.sub-link {
+	flex-direction: column;
+	gap: 1.5rem;
+	padding: 2rem 2rem;
+}
+
+.txt {
+	font-size: type.fs(sc);
+	color: clr.clrs(Medium-Gray);
+	transition: all 0.2s ease-in-out;
+
+	@include mixin.brk-point(lg) {
+		font-size: type.fs(mcc);
+	}
+}
+
+.txt:hover {
+	color: clr.clrs(Almost-Black);
+}
+
+.hidden {
+	display: none;
+}
+
+// dynamic class
+.overlay {
+    position: relative;
+    z-index: 9;
+
+	
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0 0 0 / 0.70);
+        z-index: 9;
+
+		@include mixin.brk-point(lg) {
+			content: none;
+		}
+    }
+
+	
+}

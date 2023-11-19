@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- google font link added -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- stylesheet added -->
+  <link rel="stylesheet" href="up/css/main-style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- header------------------------------------------------ -->
+
+ <header class="header flex">
+  <div class="header__img flex">
+   
+    <img class="header__img--menu" src="images/icon-menu.svg" alt="menu" loading="lazy">
+    <a href="#"><img class="header__img--logo" src="images/logo.svg" alt="logo" loading="lazy"></a>
+    
+
+  </div>
+  
+<!-- nav -->
+<nav class="header__nav flex display-nav">
+  <img class="header__nav--close" src="images/icon-close-menu.svg" alt="close" loading="lazy">
+
+  <ul class="header__nav--links flex">
+
+    <!-- features -->
+    <li class="header__nav--links-link">
+      <div class="flex features">
+        <a href="#" class="txt">Features</a>
+        <img src="images/icon-arrow-down.svg" alt="down" class="down" loading="lazy">
+        <img src="images/icon-arrow-up.svg" alt="up" class="up hidden" loading="lazy">
+      </div>
+    
+
+      <div class="link__sub--link sub-link flex hidden">
+        <div class="flex">
+          <img src="images/icon-todo.svg" alt="icon-todo" loading="lazy">
+          <a href="#" class="txt"> Todo List</a>
+        </div>
+
+        <div class="flex">
+          <img src="images/icon-calendar.svg" alt="icon-todo" loading="lazy">
+          <a href="#" class="txt"> Calender</a>
+        </div>
+
+        <div class="flex">
+          <img src="images/icon-reminders.svg" alt="icon-todo" loading="lazy">
+          <a href="#" class="txt"> Reminders</a>
+        </div>
+
+        <div class="flex">
+          <img src="images/icon-planning.svg" alt="icon-todo" loading="lazy">
+          <a href="#" class="txt"> Planning</a>
+        </div>
+
+      </div>
+    </li>
+
+    <!-- Company -->
+    <li class="header__nav--links-link">
+      <div class="flex company">
+        <a href="#" class="txt">Company</a>
+      
+        <img src="images/icon-arrow-down.svg" alt="down" class="downtwo" loading="lazy">
+        <img src="images/icon-arrow-up.svg" alt="up" class="uptwo hidden" loading="lazy">
+      </div>
+      
+
+      <div class="link__sub--link-two flex sub-link hidden">
+        <a href="#" class="txt">History</a>
+        <a href="#" class="txt">Our Team</a>
+        <a href="#" class="txt">Blog</a>
+
+      </div>
+    </li>
+
+    <li class="header__nav--links-link">
+      <a href="#" class="txt"> Careers</a>  
+    </li>
+
+
+    <li class="header__nav--links-link">
+     <a href="#" class="txt">About</a>
+    </li>
+  </ul>
+
+  <div class="header__nav--login flex">
+    <a href="#" class="txt">Login</a>
+    <button type="button" class="txt">
+      Register
+    </button>
+  
+  </div>
+
+  
+</nav>
+
+
+ 
+ </header>
+
+<!-- ------------------------------------------------ hero  -->
+
+ <section class="hero content-limit">
+  <div class="hero__content flex">
+    <div class="hero__content--detail">
+      <h1 class="hero__content--detail-title">
+        Make
+        <span>remote Work</span>  
+
+      </h1>
+
+      <p class="hero__content--detail-para">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+
+      <button class="hero__content--detail-btn txt" type="button">
+        Learn more
+      </button>
+
+      <div class="hero__content--detail-icon flex">
+        <img src="images/client-databiz.svg" alt="databiz" loading="lazy">
+        <img src="images/client-audiophile.svg" alt="audiopoint" loading="lazy">
+        <img src="images/client-meet.svg" alt="meet" loading="lazy">
+        <img src="images/client-maker.svg" alt="maker" loading="lazy">
+
+      </div>
+
+    </div>
+
+    <div class="hero__content--hero-img">
+      <img  class="mobile-img" src="images/image-hero-mobile.png" alt="hero" loading="lazy">
+      <img class="desktop-img"  src="images/image-hero-desktop.png" alt="hero" loading="lazy">
+
+    </div>
+
+  </div>
+  
+
+ </section>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Asif Patel</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

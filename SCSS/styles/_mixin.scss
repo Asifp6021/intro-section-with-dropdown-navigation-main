@@ -1,0 +1,17 @@
+$bp: (
+	xs: 350px,
+	sm: 500px,
+	md: 700px,
+	lg: 950px,
+	xl: 1250px,
+);
+
+@mixin brk-point($screen) {
+	@if map-has-key($bp, $screen) {
+		@media (min-width: map-get($bp, $screen)) {
+			@content;
+		}
+	} @else {
+		@error "Undefined breakpoint: #{$screen}.";
+	}
+}

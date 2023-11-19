@@ -1,0 +1,37 @@
+:root {
+    font-size: 10px;
+  }
+
+
+
+
+  $font-size: (
+    "xxxl": 7rem,
+    "xxl": 5.5rem,
+    "xl": 4rem,
+    "lc": 3.5rem,
+    "l": 3rem,
+    "mc": 2.5rem,
+    "m": 2rem,
+    'mcc': 1.7rem,
+    "sc": 1.5rem,
+    "s": 1rem,
+  );
+
+  @function fs($f-s) {
+    @return map-get($font-size, $f-s);
+  }
+
+
+$font-weight: (
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 800,
+    "w-black": 900,
+  );
+
+  @function fw($f-w) {
+    @return map-get($font-weight, $f-w);
+  }
