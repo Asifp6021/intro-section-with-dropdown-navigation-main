@@ -151,6 +151,7 @@
 						img {
 							width: 1.5rem;
 							height: 1.5rem;
+							object-fit: cover;
 						}
 					}
 				}
@@ -297,6 +298,7 @@
 				cursor: pointer;
 				text-align: center;
 				transition: all 0.25s ease-in-out;
+				border: 2px solid transparent;
 
 				@include mixin.brk-point(xs) {
 					margin-left: -4rem;
@@ -344,6 +346,7 @@
 					height: 2rem;
 					width: 6rem;
 					cursor: pointer;
+					object-fit: cover;
 
 					@include mixin.brk-point(lg) {
 						height: 3rem;
@@ -361,14 +364,14 @@
 
 			@include mixin.brk-point(md) {
 				width: 50%;
-				height: 90%;
+				height: 100%;
 				margin-top: -9rem;
 			}
 
 			@include mixin.brk-point(xl) {
 				height: 100%;
 				width: 35%;
-				margin-top: -5rem;
+				margin-top: -4rem;
 			}
 
 			.mobile-img {
@@ -390,7 +393,6 @@
 		}
 	}
 }
-
 
 .attribution {
 	padding-top: 3rem;
